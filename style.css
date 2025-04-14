@@ -1,0 +1,57 @@
+/* All */
+
+*{
+    margin: 0;
+    padding: 12px;
+}
+
+/* Header */
+
+/* Main */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(130, 2, 181);
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.251);
+    /* border: 5px tomato solid; */
+    padding: 15px;
+    color: rgb(124, 238, 251);
+    width: 50%;
+    border-radius: 20px;
+
+    div {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+
+    }
+
+    input {
+        border-radius: 5px;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+    }
+    input[type=submit]{
+        background-color: rgb(164, 5, 154);
+        color: rgb(131, 224, 250);
+        border-style: none;
+        border-radius: 5px;
+        width: min-content;
+        padding: 8px;
+    }
+}
+#bigBox{
+display: flex;
+width: 68%;
+align-items: flex-start;
+margin-bottom: 20px;
+input{
+    width: 100%;
+    height: 100px;
+}
+}
+/* Footer */
