@@ -8,6 +8,11 @@
 /* Header */
 
 /* Main */
+main{
+    margin: 24px auto;
+    display: flex;
+    justify-content: center;
+}
 form {
     display: flex;
     flex-direction: column;
