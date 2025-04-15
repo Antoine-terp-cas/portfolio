@@ -1,62 +1,172 @@
 /* All */
-
-*{
-    margin: 0;
-    padding: 12px;
+:root {
+    --primary: #9B15BD;
+    --secondary: #37bd15;
+    --cardInterior: #ba63d1;
+    --cardBorder: #650ea9;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 1px solid var(--secondary);
+}
+
+body {
+    background-color: black;
+    color: #fff;
+    cursor: crosshair;
+}
+
+
 
 /* Header */
-
-/* Main */
-main{
-    margin: 24px auto;
-    display: flex;
-    justify-content: center;
+header > *{
+    margin-bottom: 25px;
 }
-form {
+nav {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(130, 2, 181);
-    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.251);
-    /* border: 5px tomato solid; */
-    padding: 15px;
-    color: rgb(124, 238, 251);
-    width: 50%;
-    border-radius: 20px;
+    justify-content: space-between;
+    background-color: var(--primary);
+    color: #fff;
 
-    div {
+    img {
+        width: 16%;
+    }
+
+    ul {
         display: flex;
         justify-content: space-evenly;
+        align-items: center;
+        width: 30%;
+
+        li {
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+}
+
+/* ---- */
+/* Main */
+/* ---- */
+main > *{
+    margin-bottom: 25px;
+}
+main {
+    text-align: center;
+    margin: auto;
+    width: 70%;
+
+    /* Section a1 */
+
+    #a1 {
+        display: flex;
+        justify-content: center;
         width: 100%;
 
+        section {
+            width: 50%;
+
+            img {
+                width: 100%;
+                border-radius: 20px;
+            }
+
+
+
+            
+
+        }
+        #a1B {
+         padding: 24px;  
+         #a1C {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            .tinyCard{
+                img{
+                    width: 100%;
+                }
+                width: 25%;
+                border-radius: 20px;
+                border: 3px solid var(--cardBorder);
+                background-color: var(--cardInterior);
+            }
+        }     
+        }
+    }
+}
+
+/* Competence Card */
+#a2{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+.compCard{
+width: 25%;
+background-color: var(--cardInterior);
+border: 3px solid var(--cardBorder);
+border-radius: 20px;
+section{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 8px;
+}
+article{
+    width: 25%;
+img{
+    width: 100%;
+}
+    
+}
+}
+}
+
+/* Card */
+#a3{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+   
+}
+.card {
+    width: 300px;
+    background-color: var(--cardInterior);
+    border: 3px solid var(--cardBorder);
+    box-shadow: 0px 0px 15px 10px #b812ff96;
+    padding: 15px;
+    color: rgb(124, 238, 251);
+    border-radius: 20px;
+    margin-bottom: 40px;
+    img {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    
+
+    h3 {
+        font-size: 25px;
+        font-weight: bold;
     }
 
     input {
-        border-radius: 5px;
-    }
-
-    article {
-        display: flex;
-        flex-direction: column;
-    }
-    input[type=submit]{
+        cursor: pointer;
         background-color: rgb(164, 5, 154);
         color: rgb(131, 224, 250);
         border-style: none;
         border-radius: 5px;
         width: min-content;
         padding: 8px;
+        text-align: center;
     }
 }
-#bigBox{
-display: flex;
-width: 68%;
-align-items: flex-start;
-margin-bottom: 20px;
-input{
-    width: 100%;
-    height: 100px;
-}
-}
+
 /* Footer */
