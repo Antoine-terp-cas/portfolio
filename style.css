@@ -2,8 +2,8 @@
 :root {
     --primary: #9B15BD;
     --secondary: #37bd15;
-    --cardInterior: #ba63d1;
-    --cardBorder: #650ea9;
+    --cardBorder: #ba63d1;
+    /* --cardInterior: #650ea9; */
     --buttonInterior: #831ad4a8;
 }
 
@@ -99,7 +99,7 @@ main {
                 width: 25%;
                 border-radius: 20px;
                 border: 3px solid var(--cardBorder);
-                background-color: var(--cardInterior);
+                /* background-color: var(--cardInterior); */
             }
         }     
         }
@@ -113,7 +113,7 @@ main {
     justify-content: space-evenly;
 .compCard{
 width: 25%;
-background-color: var(--cardInterior);
+/* background-color: var(--cardInterior); */
 border: 3px solid var(--cardBorder);
 border-radius: 20px;
 section{
@@ -141,7 +141,7 @@ img{
 }
 .card {
     width: 300px;
-    background-color: var(--cardInterior);
+    /* background-color: var(--cardInterior); */
     border: 3px solid var(--cardBorder);
     box-shadow: 0px 0px 15px 10px #b812ff96;
     padding: 15px;
@@ -187,6 +187,10 @@ img{
     >*{
         margin-bottom: 10px;
     }
+    a{
+        text-decoration: none;
+        color: #fff;
+       }
    }
    form{
     *{
@@ -220,17 +224,18 @@ img{
     display: flex;
     flex-direction: column;
    }
+   
 }
    }
 .tinyCard{
-    /* img{
-        width: 100%;
-    } */
+    img{
+        max-width: 64px;
+    }
     width: fit-content;
     padding: 25px;
     border-radius: 20px;
     border: 3px solid var(--cardBorder);
-    background-color: var(--cardInterior);
+    /* background-color: var(--cardInterior); */
 }
 }
 
@@ -241,5 +246,30 @@ p{
         cursor: crosshair;
         color: #fff;
         text-decoration: none;
+    }
+}
+
+/* ----- */
+/* Media */
+/* ----- */
+
+@media screen and (max-width: 600px) {
+    #a2{
+        flex-direction: column;
+        .compCard{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+    #a1C{
+        flex-direction: column;
+        width: 100%;
+        .tinyCard{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+    nav ul li{
+        display: none;
     }
 }
