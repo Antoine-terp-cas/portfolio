@@ -4,6 +4,7 @@
     --secondary: #37bd15;
     --cardInterior: #ba63d1;
     --cardBorder: #650ea9;
+    --buttonInterior: #831ad4a8;
 }
 
 * {
@@ -19,8 +20,10 @@ body {
 }
 
 
-
+/* ------ */
 /* Header */
+/* ------ */
+
 header > *{
     margin-bottom: 25px;
 }
@@ -159,14 +162,69 @@ img{
 
     input {
         cursor: pointer;
-        background-color: rgb(164, 5, 154);
-        color: rgb(131, 224, 250);
-        border-style: none;
+        background-color: var(--buttonInterior);
+        color: #fff;
+        border: 3px solid var(--cardBorder);
         border-radius: 5px;
         width: min-content;
         padding: 8px;
         text-align: center;
     }
+    a{
+        color: #fff;
+        text-decoration: none;
+    }
+}
+#a4{
+    display: flex;
+   > section, form{
+    width: 50%;
+   }
+   #a4B{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    >*{
+        margin-bottom: 10px;
+    }
+   }
+   form{
+    *{
+        margin-bottom: 5px;
+    }
+    #bigBox{
+        display: flex;
+        flex-direction: column;
+        label{
+            text-align: start;
+        }
+         input{
+            height: 70px;
+         }
+    }
+     div {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    section{
+    display: flex;
+    flex-direction: column;
+   }
+}
+   }
+.tinyCard{
+    /* img{
+        width: 100%;
+    } */
+    width: fit-content;
+    padding: 25px;
+    border-radius: 20px;
+    border: 3px solid var(--cardBorder);
+    background-color: var(--cardInterior);
+}
 }
 
 /* Footer */
+p{
+    text-align: center;
+}
