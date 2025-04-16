@@ -1,0 +1,21 @@
+/* All */
+:root {
+    --primary: #9B15BD;
+    --secondary: #37bd15;
+    --cardInterior: #ba63d1;
+    --cardBorder: #650ea9;
+    --buttonInterior: #831ad4a8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 1px solid var(--secondary);
+}
+
+body {
+    background-color: black;
+    color: #fff;
+    cursor: crosshair;
+}
+

@@ -10,7 +10,7 @@
 * {
     margin: 0;
     padding: 0;
-    border: 1px solid var(--secondary);
+    /* border: 1px solid var(--secondary); */
 }
 
 body {
@@ -202,6 +202,16 @@ img{
             height: 70px;
          }
     }
+    input[type=submit] {
+        cursor: pointer;
+        background-color: #ffffff41;
+        color: #fff;
+        border: 3px solid var(--cardBorder);
+        border-radius: 5px;
+        width: min-content;
+        padding: 8px;
+        text-align: center;
+    }
      div {
     display: flex;
     flex-direction: column;
@@ -227,4 +237,9 @@ img{
 /* Footer */
 p{
     text-align: center;
+    a{
+        cursor: crosshair;
+        color: #fff;
+        text-decoration: none;
+    }
 }
