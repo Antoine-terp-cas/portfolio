@@ -193,6 +193,9 @@ img{
        }
    }
    form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     *{
         margin-bottom: 5px;
     }
